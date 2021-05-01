@@ -31,45 +31,11 @@ allprojects {
 
 <pre>
 dependencies {
-   implementation 'com.github.bhapps:UtilitoolsLogic:0.0.1-alpha'
+   implementation 'com.github.bhapps:UtilitoolsLogic:0.0.2-alpha'
 }
 </pre>
 
-* To return an encrypted string value, pass your string to encrypt and use the function:
-
-<pre>
-bhapps.utilitools.logic.java.security.encryption.EncryptDecrypt.getEncryptedStringFromString(string_to_encrypt)
-</pre>
-
-* To return an decrypted string value, pass your encrypted string and use the function:
-
-<pre>
-bhapps.utilitools.security.java.security.encryption.EncryptDecrypt.getEncryptedStringFromString(encrypted_string_to_decrypt)
-</pre>
-
 # Functions
-
-<pre>
-    /*
-     *
-     * getEncryptedStringFromString(string)
-     * get encrypted string from passed string value
-     * bhapps.utilitools.security.java.security.encryption.EncryptDecrypt.getEncryptedStringFromString(string)
-     * returns String
-     *
-    */
-</pre>
-
-<pre>
-    /*
-     *
-     * getDecryptedStringFromString(string)
-     * get decrypted string from passed string value
-     * bhapps.utilitools.security.java.security.encryption.EncryptDecrypt.getDecryptedStringFromString(string)
-     * returns String
-     *
-    */
-</pre>
 
 # Libraries
 
