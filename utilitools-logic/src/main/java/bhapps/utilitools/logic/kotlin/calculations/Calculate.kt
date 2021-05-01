@@ -10,6 +10,7 @@
 package bhapps.utilitools.logic.kotlin.calculations
 
 import java.security.SecureRandom
+import kotlin.math.pow
 import kotlin.random.Random
 
 object Calculate {
@@ -23,7 +24,7 @@ object Calculate {
         *
     */
     fun thingIsNotNull(param: Any): Boolean {
-        return if(param !=null) true else false
+        return param !=null
     }
 
     /*
@@ -156,6 +157,13 @@ object Calculate {
         var result = 0
         result = (100 * value / total)
         return  result
+    }
+
+    fun roundIntUp(src: Int): Int {
+        var len = src.toString().length - 1
+        if (len == 0) len = 1
+        val d = 10.toDouble().pow(len.toDouble()).toInt()
+        return (src + (d - 1)) / d * d
     }
 
 }
